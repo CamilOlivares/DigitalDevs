@@ -16,3 +16,62 @@ main {
 section {
   margin-bottom: 60px; /* Espacio entre las secciones */
 }
+
+/* Estilos para organizar el contenido en bloques horizontales */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los bloques se ajusten si son muchos */
+  justify-content: space-between; /* Distribuye espacio entre los bloques */
+  gap: 20px; /* Espacio entre los bloques */
+  padding: 20px 0; /* Espacio entre los bloques y el contenido principal */
+}
+
+/* Estilos de los bloques de contenido */
+.content-block {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
+  align-items: center; /* Alineación vertical de los elementos dentro del bloque */
+  flex: 1; /* Los bloques ocupan el mismo espacio */
+  margin: 10px;
+  padding: 20px;
+  background-color: #1c1c1c; /* Fondo de los bloques, un tono oscuro diferente */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra de los bloques */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave al pasar el mouse por encima */
+}
+
+/* Efecto hover sobre los bloques */
+.content-block:hover {
+  transform: scale(1.05); /* Efecto de agrandamiento */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+}
+
+/* Estilos para el contenido dentro de los bloques con múltiples elementos */
+.left-content, .center-left-content, .center-right-content, .right-content {
+  flex: 1; /* Todos los elementos ocupan el mismo espacio */
+  margin: 0 10px; /* Espacio entre los elementos */
+}
+
+.center-left-content, .center-right-content {
+  text-align: center; /* Alineación centrada para los elementos del centro */
+}
+
+.right-content {
+  text-align: right; /* Alineación a la derecha */
+}
+
+/* Estilo responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Bloques uno debajo del otro en pantallas pequeñas */
+  }
+  
+  .content-block {
+    flex-direction: column; /* Alinea los elementos dentro del bloque en una columna */
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+  }
+
+  .left-content, .center-left-content, .center-right-content, .right-content {
+    margin: 10px 0; /* Espacio entre los elementos cuando se apilan verticalmente */
+  }
+}

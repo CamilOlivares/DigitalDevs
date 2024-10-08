@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/about.css"> <!-- Hoja de estilo principal -->
     <link rel="stylesheet" href="assets/css/robot.css"> <!-- Hoja de estilo principal -->
     <link rel="stylesheet" href="assets/css/cursor.css"> <!-- Estilos personalizados para el cursor -->
+    <link rel="stylesheet" href="assets/css/digitaldevsmessage.css"> <!-- Estilos personalizados para el cursor -->
     <link rel="stylesheet" href="assets/css/footer.css"> <!-- Estilos para el pie de página -->
 </head>
 <body>
@@ -25,7 +26,33 @@
 
 <main>
     <?php include("views/about.php"); ?>
+
+
+    <div class="content-block">
+  <div class="left-content">
     <?php include("partials/robot.php"); ?>
+    <p>Este es el contenido de la izquierda</p>
+  </div>
+
+  <div class="center-left-content">
+    <?php include("partials/robot.php"); ?>
+    <p>Este es el contenido del centro izquierda</p>
+  </div>
+
+  <div class="center-right-content">
+    <?php include("partials/robot.php"); ?>
+    <p>Este es el contenido del centro derecha</p>
+  </div>
+
+  <div class="right-content">
+    <?php include("partials/robot.php"); ?>
+    <p>Este es el contenido de la derecha</p>
+  </div>
+</div>
+
+
+
+
     <?php include("views/footer.php"); ?>
 </main>
 
