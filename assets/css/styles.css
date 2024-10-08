@@ -1,0 +1,18 @@
+/* Estilos generales del cuerpo de la página */
+body {
+  background-color: #1c1c1c; /* Fondo oscuro mate */
+  color: #e0e0e0; /* Color de texto gris claro */
+  font-family: 'Arial', sans-serif; /* Fuente general del sitio */
+  margin: 0; /* Quita los márgenes predeterminados */
+  padding: 0; /* Quita el padding predeterminado */
+}
+
+/* Estilos para el contenido principal */
+main {
+  padding: 20px; /* Espacio alrededor del contenido */
+}
+
+/* Estilos para las secciones dentro del main */
+section {
+  margin-bottom: 60px; /* Espacio entre las secciones */
+}

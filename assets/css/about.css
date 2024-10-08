@@ -1,0 +1,20 @@
+
+/* Estilo para el contenedor sobre mí */
+.about-container {
+    max-width: 800px;
+    margin: 100px auto 50px auto; /* Espacio superior de 100px para que no esté pegado al header */
+    padding: 150px; /* Espacio interno solo en los lados, no en la parte superior o inferior */
+}
+
+/* Estilo para la caja de "sobre mí" */
+.about {
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(0, 153, 255, 0.9);
+    transition: transform 0.3s;
+}
+
+.about:hover {
+    transform: scale(1.05);
+}
