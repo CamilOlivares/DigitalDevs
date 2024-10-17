@@ -1,68 +1,72 @@
 /* Estilos para el menú */
 .nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.6); /* Transparente */
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 10px rgba(0, 153, 255, 0.5); /* Sombra azul fluorescente */
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .nav-list li {
-    position: relative;
-  }
-  
-  .nav-list a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    padding: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-list a:hover {
-    color: #0099ff; /* Azul fluorescente */
-  }
-  
-  /* Dropdown menu */
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Negro mate y transparente */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-    box-shadow: 0px 4px 10px rgba(0, 153, 255, 0.5); /* Sombra azul fluorescente */
-  }
-  
-  .dropdown-menu li {
-    width: 100%;
-  }
-  
-  .dropdown-menu a {
-    padding: 0.8rem;
-    display: block;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dropdown-menu a:hover {
-    background-color: rgba(0, 153, 255, 0.3); /* Azul fluorescente en hover */
-  }
-  
-  /* Mostrar el dropdown al hacer hover */
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
+  position: fixed; /* Fija el menú en la parte superior de la página */
+  top: 0; /* Coloca el menú en la parte superior */
+  width: 100%; /* Hace que el menú ocupe todo el ancho de la página */
+  display: flex; /* Utiliza flexbox para organizar los elementos en línea */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro transparente */
+  backdrop-filter: blur(10px); /* Aplica un efecto de desenfoque al fondo */
+  box-shadow: 0px 4px 10px rgba(0, 153, 255, 0.5); /* Sombra azul fluorescente */
+  z-index: 1000; /* Coloca el menú por encima de otros elementos */
+  transition: background-color 0.3s ease; /* Transición suave en el cambio de color de fondo */
+}
+
+.nav-list {
+  list-style: none; /* Elimina las viñetas de la lista */
+  display: flex; /* Organiza los elementos de la lista en línea */
+  gap: 2rem; /* Espacio de 2rem entre los elementos de la lista */
+}
+
+.nav-list li {
+  position: relative; /* Permite que el dropdown se posicione de forma absoluta respecto a este elemento */
+}
+
+.nav-list a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: white; /* Color de texto blanco */
+  font-size: 1.2rem; /* Tamaño de fuente del texto del menú */
+  padding: 1rem; /* Espaciado interno alrededor del enlace */
+  transition: color 0.3s ease; /* Transición suave del color del texto en hover */
+}
+
+.nav-list a:hover {
+  color: #0099ff; /* Cambia el color del texto a azul fluorescente al pasar el mouse */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 180%; /* Ajusta el ancho del menú */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  box-shadow: 0px 4px 10px rgba(0, 153, 255, 0.5);
+  box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+}
+
+.dropdown-menu li {
+  width: 100%; /* Mantén el li al 100% del menú */
+}
+
+.dropdown-menu a {
+  padding: 0.8rem 1.5rem; /* Ajusta el padding para dar más espacio */
+  display: block;
+  white-space: nowrap; /* Evita que el texto salte a la siguiente línea */
+  width: 100%;
+  box-sizing: border-box; /* Asegura que el padding no haga que el contenido sobresalga */
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(0, 153, 255, 0.3); /* Fondo azul fluorescente en hover */
+}
+
+/* Mostrar el dropdown al hacer hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

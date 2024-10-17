@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para un diseño responsivo -->
-    <title>Somos Digital</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>DigitalDevs</title> <!-- Título de la página que aparece en la pestaña del navegador -->
     <!-- Enlaces a hojas de estilo CSS -->
     <link rel="stylesheet" href="assets/css/styles.css"> <!-- Hoja de estilo principal -->
-    <link rel="stylesheet" href="assets/css/header.css"> <!-- Hoja de estilo principal -->
-    <link rel="stylesheet" href="assets/css/navbar.css"> <!-- Hoja de estilo principal -->
-    <link rel="stylesheet" href="assets/css/logo.css"> <!-- Hoja de estilo principal -->
-    <link rel="stylesheet" href="assets/css/about.css"> <!-- Hoja de estilo principal -->
-    <link rel="stylesheet" href="assets/css/robot.css"> <!-- Hoja de estilo principal -->
+    <link rel="stylesheet" href="assets/css/header.css"> <!-- Hoja de estilo de header-->
+    <link rel="stylesheet" href="assets/css/navbar.css"> <!-- Hoja de estilo de menu -->
+    <link rel="stylesheet" href="assets/css/logo.css"> <!-- Hoja de estilo para el logo -->
+    <link rel="stylesheet" href="assets/css/about.css"> <!-- Hoja de estilo sobre nosotros -->
+    <link rel="stylesheet" href="assets/css/grid.css"> <!-- Hoja de estilo sobre nosotros -->
+    <link rel="stylesheet" href="assets/css/robot.css"> <!-- Hoja de estilo para robot -->
+    <link rel="stylesheet" href="assets/css/sidelink.css"> <!-- Hoja de estilo para robot -->
     <link rel="stylesheet" href="assets/css/cursor.css"> <!-- Estilos personalizados para el cursor -->
-    <link rel="stylesheet" href="assets/css/digitaldevsmessage.css"> <!-- Estilos personalizados para el cursor -->
     <link rel="stylesheet" href="assets/css/footer.css"> <!-- Estilos para el pie de página -->
 </head>
 <body>
@@ -27,8 +28,8 @@
 <main>
     <?php include("views/about.php"); ?>
 
-
-    <div class="content-block">
+<!-- Grid de 4 Secciones -->
+<div class="content-block grid-4">
   <div class="left-content">
     <?php include("partials/robot.php"); ?>
     <p>Este es el contenido de la izquierda</p>
@@ -50,6 +51,44 @@
   </div>
 </div>
 
+<!-- Grid de 3 Secciones -->
+<div class="content-block grid-3">
+  <div class="left-content">
+    <?php include("partials/robot.php"); ?>
+    <p>Este es el contenido de la izquierda</p>
+  </div>
+
+  <div class="center-content">
+    <?php include("partials/robot.php"); ?>
+    <p>Este es el contenido del centro</p>
+  </div>
+
+  <div class="right-content">
+    <?php include("partials/robot.php"); ?>
+    <p>Este es el contenido de la derecha</p>
+  </div>
+</div>
+
+<!-- Grid de 2 Secciones -->
+<div class="content-block grid-2">
+  <div class="left-content">
+    <?php include("partials/robot.php"); ?>
+    <p>Este es el contenido de la izquierda</p>
+  </div>
+
+  <div class="right-content">
+    <?php include("partials/robot.php"); ?>
+    <p>Este es el contenido de la derecha</p>
+  </div>
+</div>
+
+<!-- Grid de 1 Sección -->
+<div class="content-block grid-1">
+  <div class="single-content">
+    <?php include("partials/robot.php"); ?>
+    <p>Este es el contenido único a lo ancho</p>
+  </div>
+</div>
 
 
 
