@@ -94,7 +94,6 @@
 </div>
 
 
-
     <?php include("views/footer.php"); ?>
 </main>
 
