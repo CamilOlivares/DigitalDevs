@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="assets/css/navbar.css"> <!-- Hoja de estilo de menu -->
     <link rel="stylesheet" href="assets/css/logo.css"> <!-- Hoja de estilo para el logo -->
     <link rel="stylesheet" href="assets/css/about.css"> <!-- Hoja de estilo sobre nosotros -->
+    <link rel="stylesheet" href="assets/css/title.css"> <!-- Hoja de estilo para robot -->
     <link rel="stylesheet" href="assets/css/grid.css"> <!-- Hoja de estilo sobre nosotros -->
     <link rel="stylesheet" href="assets/css/robot.css"> <!-- Hoja de estilo para robot -->
-    <link rel="stylesheet" href="assets/css/sidelink.css"> <!-- Hoja de estilo para robot -->
     <link rel="stylesheet" href="assets/css/cursor.css"> <!-- Estilos personalizados para el cursor -->
     <link rel="stylesheet" href="assets/css/footer.css"> <!-- Estilos para el pie de página -->
 </head>
 <body>
     
 <header>
+  
     <?php include('views/neuro.php'); ?>
     <?php include('views/navbar.php'); ?>
     <?php include('views/logo.php'); ?>
@@ -28,16 +29,17 @@
 <main>
     <?php include("views/about.php"); ?>
 
+    <h2 class="grid-title">Explora el Futuro en Cuatro Pasos</h2>
 <!-- Grid de 4 Secciones -->
 <div class="content-block grid-4">
   <div class="left-content">
     <?php include("partials/robot.php"); ?>
-    <p>Este es el contenido de la izquierda</p>
+    <p><a href="https://famafactory.cl/" target="_blank">Convierte en Influencer</a></p>
   </div>
 
   <div class="center-left-content">
     <?php include("partials/robot.php"); ?>
-    <p>Este es el contenido del centro izquierda</p>
+    <p>Explora las Mejores IA</p>
   </div>
 
   <div class="center-right-content">
@@ -50,6 +52,7 @@
     <p>Este es el contenido de la derecha</p>
   </div>
 </div>
+
 
 <!-- Grid de 3 Secciones -->
 <div class="content-block grid-3">
