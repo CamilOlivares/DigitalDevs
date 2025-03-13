@@ -13,7 +13,7 @@
           </ul>
         </li>
         <li><a href="#">Tienda</li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
       </ul>
     </nav>
   </div>
