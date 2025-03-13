@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Verificar reCAPTCHA
-$secretKey = "CLAVE SECRETA";
+$secretKey = "6LdJpvMqAAAAADNf-HAg8T9PHJJZKH5ni0lSQqK8";
 $token = $_POST['g-recaptcha-response'];
 $url = "https://www.google.com/recaptcha/api/siteverify";
 
@@ -35,7 +35,7 @@ if ($result['success'] && $result['score'] >= 0.5) {
     }
 
     // Configuración del correo
-    $to = 'correo@tudominio.com'; 
+    $to = 'contacto@digitaldevs.cl'; 
     $email_subject = "Nuevo mensaje de contacto: " . $subject; 
     $body = "Nombre: $name\nEmail: $email\nAsunto: $subject\nMensaje:\n$message"; 
     $headers = "From: $email\r\n" .

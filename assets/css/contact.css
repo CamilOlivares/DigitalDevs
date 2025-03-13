@@ -7,7 +7,6 @@ body {
     padding: 0; /* Quita el padding predeterminado */
   }
 
-
 form {
     display: flex;
     flex-direction: column;
