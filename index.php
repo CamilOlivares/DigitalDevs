@@ -43,7 +43,7 @@
 
   <div class="center-right-content">
     <img src="../assets/images/AI1.png" alt="Imagen 2">
-    <p><a href="IA.php" target="_blank">Los mejores Recursos para Desarrolladores</a></p>>
+    <p><a href="IA.php" target="_blank">Los mejores Recursos para Desarrolladores</a></p>
   </div>
 
   <div class="right-content">
