@@ -33,25 +33,25 @@
 <!-- Grid de 4 Secciones -->
 <div class="content-block grid-4">
   <div class="left-content">
-    <?php include("partials/robot.php"); ?>
-    <p><a href="https://famafactory.cl/" target="_blank">Convierte en Influencer</a></p>
+   <?php include("partials/robot.php"); ?>
   </div>
 
   <div class="center-left-content">
-    <?php include("partials/robot.php"); ?>
-    <p>Explora las Mejores IA</p>
+    <img src="../assets/images/dev1.png" alt="Imagen 1">
+    <p><a href="devs.php" target="_blank">Los mejores Recursos para Desarrolladores</a></p>
   </div>
 
   <div class="center-right-content">
-    <?php include("partials/robot.php"); ?>
-    <p>Este es el contenido del centro derecha</p>
+    <img src="../assets/images/AI1.png" alt="Imagen 2">
+    <p><a href="IA.php" target="_blank">Los mejores Recursos para Desarrolladores</a></p>>
   </div>
 
   <div class="right-content">
-    <?php include("partials/robot.php"); ?>
-    <p>Este es el contenido de la derecha</p>
+    <img src="../assets/images/editor1.jpg" alt="Imagen 3">
+    <p><a href="editores.php" target="_blank">Los mejores Recursos para Desarrolladores</a></p>
   </div>
 </div>
+
 
 
 <!-- Grid de 3 Secciones -->
