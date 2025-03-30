@@ -1,37 +1,57 @@
-/* Estilos para el menú */
-.nav {
-  position: fixed; /* Fija el menú en la parte superior de la página */
-  top: 0; /* Coloca el menú en la parte superior */
-  width: 100%; /* Hace que el menú ocupe todo el ancho de la página */
-  display: flex; /* Utiliza flexbox para organizar los elementos en línea */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro transparente */
-  backdrop-filter: blur(10px); /* Aplica un efecto de desenfoque al fondo */
-  box-shadow: 0px 4px 10px rgba(0, 153, 255, 0.5); /* Sombra azul fluorescente */
-  z-index: 1000; /* Coloca el menú por encima de otros elementos */
-  transition: background-color 0.3s ease; /* Transición suave en el cambio de color de fondo */
+/* Asegurar que el header esté fijo y sobre todo el contenido */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000; /* Asegurar que esté sobre todo */
 }
 
+/* Estilos para el menú */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Ajustado para mayor visibilidad */
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 153, 255, 0.7);
+  z-index: 10001; /* Un número más alto para que quede por encima del header */
+  padding: 15px 0; /* Ajuste de padding */
+}
+
+/* Ajuste para evitar que otros elementos cubran el menú */
+body {
+  margin: 0;
+  padding-top: 70px; /* Deja espacio para el menú fijo */
+}
+
+/* Estilos de la lista del menú */
 .nav-list {
-  list-style: none; /* Elimina las viñetas de la lista */
-  display: flex; /* Organiza los elementos de la lista en línea */
-  gap: 2rem; /* Espacio de 2rem entre los elementos de la lista */
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-list li {
-  position: relative; /* Permite que el dropdown se posicione de forma absoluta respecto a este elemento */
+  position: relative;
 }
 
 .nav-list a {
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  color: white; /* Color de texto blanco */
-  font-size: 1.2rem; /* Tamaño de fuente del texto del menú */
-  padding: 1rem; /* Espaciado interno alrededor del enlace */
-  transition: color 0.3s ease; /* Transición suave del color del texto en hover */
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  display: block; /* Permite que todo el área sea clickeable */
+  transition: color 0.3s ease;
 }
 
 .nav-list a:hover {
-  color: #0099ff; /* Cambia el color del texto a azul fluorescente al pasar el mouse */
+  color: #00ccff; /* Azul más brillante para mejorar el efecto */
 }
 
 /* Dropdown menu */
@@ -39,31 +59,31 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 180%; /* Ajusta el ancho del menú */
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 200px;
   list-style: none;
   padding: 0;
   margin: 0;
   display: none;
-  box-shadow: 0px 4px 10px rgba(0, 153, 255, 0.5);
-  box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+  box-shadow: 0px 4px 10px rgba(0, 153, 255, 0.7);
+  box-sizing: border-box;
+  z-index: 10002; /* Mayor que el menú para estar sobre él */
 }
 
 .dropdown-menu li {
-  width: 100%; /* Mantén el li al 100% del menú */
+  width: 100%;
 }
 
 .dropdown-menu a {
-  padding: 0.8rem 1.5rem; /* Ajusta el padding para dar más espacio */
+  padding: 0.8rem 1.5rem;
   display: block;
-  white-space: nowrap; /* Evita que el texto salte a la siguiente línea */
+  white-space: nowrap;
   width: 100%;
-  box-sizing: border-box; /* Asegura que el padding no haga que el contenido sobresalga */
   transition: background-color 0.3s ease;
 }
 
 .dropdown-menu a:hover {
-  background-color: rgba(0, 153, 255, 0.3); /* Fondo azul fluorescente en hover */
+  background-color: rgba(0, 153, 255, 0.5);
 }
 
 /* Mostrar el dropdown al hacer hover */

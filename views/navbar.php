@@ -12,7 +12,6 @@
             <li><a href="editores.php">Editores</a></li>
           </ul>
         </li>
-        <li><a href="store.digitaldevs.cl">Tienda</li>
         <li><a href="contacto.php">Contacto</a></li>
       </ul>
     </nav>

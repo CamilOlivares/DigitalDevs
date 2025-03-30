@@ -1,0 +1,227 @@
+/***** RESET BÁSICO *****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #000; /* Ajusta si tu sitio usa otro fondo */
+    color: #fff;
+  }
+  
+  /***** ESTILOS DEL FOOTER *****/
+  footer {
+    background: #222; /* Degradado u otro color a tu gusto */
+    padding: 60px 0;
+    font-size: 16px;
+  }
+  
+  /* Contenedor principal del footer */
+  footer .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Sección superior del footer (las 4 columnas) */
+  .footer-top {
+    margin-bottom: 20px;
+  }
+  
+  /* Alineación de columnas con flex */
+  .footer-top .row {
+    display: flex;
+    flex-wrap: wrap; /* Para que no se rompa en pantallas pequeñas */
+    justify-content: space-between;
+    gap: 20px; /* Espacio horizontal entre columnas */
+  }
+  
+  /* Cada columna dentro del footer-top */
+  .footer-top .row > div {
+    flex: 1;            /* Todas las columnas se reparten el espacio */
+    min-width: 200px;   /* Evita que se encojan demasiado */
+    padding: 0 10px;
+    position: relative;
+  }
+  
+  /* Línea vertical entre columnas (excepto la última) */
+  .footer-top .row > div:not(:last-child) {
+    border-right: 1px solid #444;
+  }
+  
+  /***** TÍTULOS DE LAS COLUMNAS *****/
+  footer h3,
+  footer h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  /* Subraya los títulos con una línea roja */
+  footer h3::after,
+  footer h4::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: rgba(0, 204, 255, 0.7);
+    margin-top: 5px;
+  }
+  
+  /***** ABOUT-FOOTER *****/
+  .about-footer ul {
+    list-style: none;
+    margin-top: 15px;
+    text-align: center; /* Centra el contenido dentro de la columna */
+  }
+  
+  /* Logo sin fondo ni borde, centrado y más pequeño */
+  .about-footer ul img {
+    max-width: 120px;       /* Ajusta el tamaño del logo */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;    /* Centra y deja espacio debajo */
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+  
+  /* Enlaces dentro de about-footer */
+  .about-footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .about-footer a:hover {
+    color: rgba(0, 204, 255, 0.7);
+  }
+  
+  /* Botón rojo */
+  .btn.red-btn {
+    display: inline-block;
+    background: #ed1b24;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    margin-top: 10px; /* Un poco de espacio arriba para separarlo del logo */
+  }
+  
+  .btn.red-btn:hover {
+    background: #bd0909;
+    color: #fff;
+  }
+  
+  /***** PÁGINAS (PAGE LINKS, MORE INFO) *****/
+  .page-more-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  .page-more-info ul li {
+    margin-bottom: 8px;
+  }
+  
+  .page-more-info ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .page-more-info ul li a:hover {
+    color: rgba(0, 204, 255, 0.7);
+  }
+  
+  /***** OPEN HOURS *****/
+  .open-hours .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .open-hours .table tr {
+    border-bottom: 1px solid #333;
+  }
+  
+  .open-hours .table tr:last-child {
+    border-bottom: none;
+  }
+  
+  .open-hours .table td {
+    padding: 6px 0;
+    color: #ccc;
+    font-size: 15px;
+  }
+  
+  .open-hours .table td:first-child {
+    font-weight: 600;
+  }
+  
+  /* Ícono de reloj a la izquierda */
+  .open-hours .table td i {
+    margin-right: 6px;
+  }
+  
+  /***** LÍNEA SEPARADORA *****/
+  footer hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 20px 0;
+  }
+  
+  /***** SECCIÓN INFERIOR DEL FOOTER (footer-bottom) *****/
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Para que no se rompa en pantallas pequeñas */
+    gap: 10px;
+  }
+  
+  /* Enlaces y texto en footer-bottom */
+  .footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-bottom a:hover {
+    color: (0, 204, 255, 0.7);
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /***** RESPONSIVE *****/
+  @media (max-width: 768px) {
+    footer {
+      font-size: 14px;
+      padding: 40px 0;
+    }
+  
+    .footer-top .row > div:not(:last-child) {
+      border-right: none; /* Evitar líneas verticales en móvil */
+    }
+  
+    .footer-top .row {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+  }
+  
