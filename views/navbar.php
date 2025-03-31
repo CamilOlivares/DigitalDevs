@@ -13,6 +13,7 @@
           </ul>
         </li>
         <li><a href="contacto.php">Contacto</a></li>
+        <li><a href="portafolio.php">Portafolio</a></li>
       </ul>
     </nav>
   </div>

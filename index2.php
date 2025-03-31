@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/logo.css"> <!-- Hoja de estilo para el logo -->
     <link rel="stylesheet" href="assets/css/about.css"> <!-- Hoja de estilo sobre nosotros -->
     <link rel="stylesheet" href="assets/css/title.css"> <!-- Hoja de estilo para robot -->
-    <link rel="stylesheet" href="assets/css/grid.css"> <!-- Hoja de estilo sobre grid -->
+    <link rel="stylesheet" href="assets/css/grid.css"> <!-- Hoja de estilo sobre nosotros -->
     <link rel="stylesheet" href="assets/css/robot.css"> <!-- Hoja de estilo para robot -->
     <link rel="stylesheet" href="assets/css/cursor.css"> <!-- Estilos personalizados para el cursor -->
     <link rel="stylesheet" href="assets/css/footer.css"> <!-- Estilos para el pie de página -->

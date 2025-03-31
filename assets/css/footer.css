@@ -1,227 +1,260 @@
-/***** RESET BÁSICO *****/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --primary-color: #00ccff;
+  --dark-bg: #121212;
+  --darker-bg: #0a0a0a;
+  --text-color: #e0e0e0;
+  --text-light: #a0a0a0;
+  --accent-color: #ed1b24;
+}
+
+.modern-footer {
+  background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+  color: var(--text-color);
+  padding: 4rem 0 2rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), transparent);
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.footer-column {
+  position: relative;
+}
+
+.logo-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+.brand-highlight {
+  color: var(--primary-color);
+}
+
+.footer-subheading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: white;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-subheading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: var(--primary-color);
+}
+
+.footer-logo {
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo svg {
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.3));
+  transition: filter 0.3s ease;
+}
+
+.footer-logo:hover svg {
+  filter: drop-shadow(0 0 15px rgba(0, 204, 255, 0.6));
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background: #c81018;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(237, 27, 36, 0.3);
+}
+
+.cta-button svg {
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover svg {
+  transform: translateX(3px);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.link-icon {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: white;
+  transform: translateX(5px);
+}
+
+.footer-link:hover .link-icon {
+  transform: translateX(3px);
+}
+
+.schedule {
+  margin-top: 1rem;
+}
+
+.schedule-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-icon {
+  color: var(--primary-color);
+}
+
+.schedule-days {
+  font-weight: 500;
+}
+
+.schedule-hours {
+  color: var(--text-light);
+  justify-self: end;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  color: var(--text-light);
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+}
+
+.social-icon:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 204, 255, 0.2) 50%, transparent 100%);
+  margin: 2rem 0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.legal-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.legal-link {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.legal-link:hover {
+  color: var(--primary-color);
+}
+
+.copyright {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.current-year {
+  color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
   }
   
-  body {
-    font-family: Arial, sans-serif;
-    background: #000; /* Ajusta si tu sitio usa otro fondo */
-    color: #fff;
-  }
-  
-  /***** ESTILOS DEL FOOTER *****/
-  footer {
-    background: #222; /* Degradado u otro color a tu gusto */
-    padding: 60px 0;
-    font-size: 16px;
-  }
-  
-  /* Contenedor principal del footer */
-  footer .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Sección superior del footer (las 4 columnas) */
-  .footer-top {
-    margin-bottom: 20px;
-  }
-  
-  /* Alineación de columnas con flex */
-  .footer-top .row {
-    display: flex;
-    flex-wrap: wrap; /* Para que no se rompa en pantallas pequeñas */
-    justify-content: space-between;
-    gap: 20px; /* Espacio horizontal entre columnas */
-  }
-  
-  /* Cada columna dentro del footer-top */
-  .footer-top .row > div {
-    flex: 1;            /* Todas las columnas se reparten el espacio */
-    min-width: 200px;   /* Evita que se encojan demasiado */
-    padding: 0 10px;
-    position: relative;
-  }
-  
-  /* Línea vertical entre columnas (excepto la última) */
-  .footer-top .row > div:not(:last-child) {
-    border-right: 1px solid #444;
-  }
-  
-  /***** TÍTULOS DE LAS COLUMNAS *****/
-  footer h3,
-  footer h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 600;
-    position: relative;
-  }
-  
-  /* Subraya los títulos con una línea roja */
-  footer h3::after,
-  footer h4::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 2px;
-    background: rgba(0, 204, 255, 0.7);
-    margin-top: 5px;
-  }
-  
-  /***** ABOUT-FOOTER *****/
-  .about-footer ul {
-    list-style: none;
-    margin-top: 15px;
-    text-align: center; /* Centra el contenido dentro de la columna */
-  }
-  
-  /* Logo sin fondo ni borde, centrado y más pequeño */
-  .about-footer ul img {
-    max-width: 120px;       /* Ajusta el tamaño del logo */
-    height: auto;
-    display: block;
-    margin: 0 auto 15px;    /* Centra y deja espacio debajo */
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    padding: 0;
-  }
-  
-  /* Enlaces dentro de about-footer */
-  .about-footer a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .about-footer a:hover {
-    color: rgba(0, 204, 255, 0.7);
-  }
-  
-  /* Botón rojo */
-  .btn.red-btn {
-    display: inline-block;
-    background: #ed1b24;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    transition: background 0.3s;
-    margin-top: 10px; /* Un poco de espacio arriba para separarlo del logo */
-  }
-  
-  .btn.red-btn:hover {
-    background: #bd0909;
-    color: #fff;
-  }
-  
-  /***** PÁGINAS (PAGE LINKS, MORE INFO) *****/
-  .page-more-info ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 15px;
-  }
-  
-  .page-more-info ul li {
-    margin-bottom: 8px;
-  }
-  
-  .page-more-info ul li a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  .page-more-info ul li a:hover {
-    color: rgba(0, 204, 255, 0.7);
-  }
-  
-  /***** OPEN HOURS *****/
-  .open-hours .table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-  }
-  
-  .open-hours .table tr {
-    border-bottom: 1px solid #333;
-  }
-  
-  .open-hours .table tr:last-child {
-    border-bottom: none;
-  }
-  
-  .open-hours .table td {
-    padding: 6px 0;
-    color: #ccc;
-    font-size: 15px;
-  }
-  
-  .open-hours .table td:first-child {
-    font-weight: 600;
-  }
-  
-  /* Ícono de reloj a la izquierda */
-  .open-hours .table td i {
-    margin-right: 6px;
-  }
-  
-  /***** LÍNEA SEPARADORA *****/
-  footer hr {
-    border: none;
-    border-top: 1px solid #444;
-    margin: 20px 0;
-  }
-  
-  /***** SECCIÓN INFERIOR DEL FOOTER (footer-bottom) *****/
   .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Para que no se rompa en pantallas pequeñas */
-    gap: 10px;
-  }
-  
-  /* Enlaces y texto en footer-bottom */
-  .footer-bottom a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footer-bottom a:hover {
-    color: (0, 204, 255, 0.7);
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  /***** RESPONSIVE *****/
-  @media (max-width: 768px) {
-    footer {
-      font-size: 14px;
-      padding: 40px 0;
-    }
-  
-    .footer-top .row > div:not(:last-child) {
-      border-right: none; /* Evitar líneas verticales en móvil */
-    }
-  
-    .footer-top .row {
-      flex-direction: column;
-      gap: 30px;
-    }
-  
-    .footer-bottom {
       flex-direction: column;
       text-align: center;
-      gap: 10px;
-    }
   }
   
+  .legal-links {
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+}

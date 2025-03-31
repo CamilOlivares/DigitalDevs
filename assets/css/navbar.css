@@ -1,34 +1,45 @@
-/* Asegurar que el header esté fijo y sobre todo el contenido */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10000; /* Asegurar que esté sobre todo */
+/* ===== ESTILOS GENERALES ===== */
+:root {
+  --nav-height: 70px;
+  --nav-bg-color: rgba(0, 0, 0, 0.95);
+  --nav-shadow: 0px 4px 10px rgba(0, 153, 255, 0.7);
+  --nav-text-color: white;
+  --nav-hover-color: #00ccff;
+  --grid-item-bg: #1c1c1c;
 }
 
-/* Estilos para el menú */
+body {
+  margin: 0;
+  padding-top: var(--nav-height);
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+}
+
+/* ===== MENÚ FIJO QUE SE OCULTA AL SCROLL ===== */
+
 .nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 70px; /* Ajusta según tu necesidad */
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8); /* Ajustado para mayor visibilidad */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Color inicial */
   backdrop-filter: blur(10px);
-  box-shadow: 0px 4px 10px rgba(0, 153, 255, 0.7);
-  z-index: 10001; /* Un número más alto para que quede por encima del header */
-  padding: 15px 0; /* Ajuste de padding */
+  box-shadow: var(--nav-shadow);
+  z-index: 1000;
+  transition: all 0.4s ease; /* Transición para opacidad y movimiento */
 }
 
-/* Ajuste para evitar que otros elementos cubran el menú */
-body {
-  margin: 0;
-  padding-top: 70px; /* Deja espacio para el menú fijo */
+/* Clase para ocultar el menú */
+.nav-hidden {
+  transform: translateY(-100%);
 }
 
-/* Estilos de la lista del menú */
+
+/* Lista de navegación */
 .nav-list {
   list-style: none;
   display: flex;
@@ -37,56 +48,101 @@ body {
   padding: 0;
 }
 
+/* Elementos del menú */
 .nav-list li {
   position: relative;
 }
 
 .nav-list a {
   text-decoration: none;
-  color: white;
+  color: var(--nav-text-color);
   font-size: 1.2rem;
-  padding: 1rem;
-  display: block; /* Permite que todo el área sea clickeable */
-  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: all 0.3s ease;
+  border-radius: 4px;
 }
 
 .nav-list a:hover {
-  color: #00ccff; /* Azul más brillante para mejorar el efecto */
+  color: var(--nav-hover-color);
+  background-color: rgba(0, 153, 255, 0.2);
 }
 
-/* Dropdown menu */
+/* ===== DROPDOWN ===== */
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: var(--nav-bg-color);
   width: 200px;
   list-style: none;
   padding: 0;
   margin: 0;
   display: none;
-  box-shadow: 0px 4px 10px rgba(0, 153, 255, 0.7);
-  box-sizing: border-box;
-  z-index: 10002; /* Mayor que el menú para estar sobre él */
-}
-
-.dropdown-menu li {
-  width: 100%;
+  box-shadow: var(--nav-shadow);
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+  z-index: 1001;
 }
 
 .dropdown-menu a {
   padding: 0.8rem 1.5rem;
-  display: block;
+  font-size: 1rem;
   white-space: nowrap;
-  width: 100%;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .dropdown-menu a:hover {
   background-color: rgba(0, 153, 255, 0.5);
 }
 
-/* Mostrar el dropdown al hacer hover */
+/* Mostrar dropdown al hover */
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+/* ===== CONTENIDO (GRID) ===== */
+.content-block {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Clases de grid */
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-1 { grid-template-columns: 1fr; }
+
+/* Elementos del grid */
+.content-block > div {
+  background-color: var(--grid-item-bg);
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+/* Efecto hover */
+.content-block > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 153, 255, 0.3);
+  z-index: 2;
+}
+
+/* Imágenes del grid */
+.content-block img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.content-block > div:hover img {
+  transform: scale(1.03);
 }
