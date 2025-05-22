@@ -44,17 +44,17 @@
   </div>
 
   <div class="center-left-content">
-    <img src="../assets/images/dev1.png" alt="Imagen 1">
+    <img src="../assets/images/dev1.png" alt="Imagen 2">
     <p><a href="devs.php" target="_blank">Codepen</a></p>
   </div>
 
   <div class="center-right-content">
-    <img src="../assets/images/AI1.png" alt="Imagen 2">
+    <img src="../assets/images/dev1.png" alt="Imagen 3">
     <p><a href="IA.php" target="_blank">UIverse</a></p>
   </div>
 
   <div class="right-content">
-    <img src="../assets/images/editor1.jpg" alt="Imagen 3">
+    <img src="../assets/images/dev1.png" alt="Imagen 4">
     <p><a href="editores.php" target="_blank">Magicui Design</a></p>
   </div>
 </div>
@@ -72,7 +72,7 @@
   </div>
 
   <div class="center-right-content">
-    <img src="../assets/images/AI1.png" alt="Imagen 2">
+    <img src="../assets/images/dev1.png" alt="Imagen 2">
     <p><a href="IA.php" target="_blank">html5up</a></p>
   </div>
 </div>

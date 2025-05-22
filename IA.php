@@ -33,28 +33,25 @@
     <?php include("views/about.php"); ?>
     <?php include("views/glitchtext.php"); ?>
 
-
-
-
 <!-- Grid de 4 Secciones -->
 <div class="content-block grid-4">
   <div class="center-left-content">
-    <img src="../assets/images/dev1.png" alt="Imagen 1">
-    <p><a href="https://chatgpt.com/" target="_blank"> Chat GPT</a></p>
+    <img src="../assets/images/AI1.png" alt="Imagen 1">
+    <p><a href="https://chatgpt.com/" target="_blank">Chat GPT</a></p>
   </div>
 
   <div class="center-left-content">
-    <img src="../assets/images/dev1.png" alt="Imagen 1">
+    <img src="../assets/images/AI1.png" alt="Imagen 2">
     <p><a href="https://gemini.google.com/app" target="_blank">Gemini</a></p>
   </div>
 
   <div class="center-right-content">
-    <img src="../assets/images/AI1.png" alt="Imagen 2">
+    <img src="../assets/images/AI1.png" alt="Imagen 3">
     <p><a href="https://www.deepseek.com/" target="_blank">DeepSeek</a></p>
   </div>
 
   <div class="right-content">
-    <img src="../assets/images/editor1.jpg" alt="Imagen 3">
+    <img src="../assets/images/AI1.png" alt="Imagen 4">
     <p><a href="https://www.meta.ai/" target="_blank">Meta AI</a></p>
   </div>
 </div>

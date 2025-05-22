@@ -103,8 +103,89 @@
                     </a>
                 </div>
 
+                <div class="project">
+                    <a href="https://stoikspa.cl" target="_blank" class="project-link">
+                        <div class="project-image">
+                            <img src="../assets/images/Proyecto6.png" alt="Stoik" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <h3>Stoik SpA</h3>
+                            <p>stoikspa.cl - Empresa Backoffice</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project">
+                    <a href="https://factory13.cl" target="_blank" class="project-link">
+                        <div class="project-image">
+                            <img src="../assets/images/Proyecto6.png" alt="Factory 13" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <h3>Factory 13</h3>
+                            <p>factory13.cl - Productora de Eventos</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project">
+                    <a href="https://minaer.cl" target="_blank" class="project-link">
+                        <div class="project-image">
+                            <img src="../assets/images/Proyecto6.png" alt="Minaer" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <h3>Minaer</h3>
+                            <p>minaer.cl - Empresa de Seguridad Privada</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project">
+                    <a href="https://formaplus.cl" target="_blank" class="project-link">
+                        <div class="project-image">
+                            <img src="../assets/images/Proyecto6.png" alt="Formaplus" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <h3>Formaplus</h3>
+                            <p>formaplus.cl - OTEC</p>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </section>
+
+        <section id="video-edits">
+         <h2>Videos Editados</h2>
+            <div class="projects-grid">
+
+                <div class="project">
+                    <div class="project-image">
+                        <iframe width="100%" height="215" src="https://www.youtube.com/watch?v=xsAKaGsIKK8&ab_channel=Yetwater" 
+                                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-info">
+                        <h3>Título del Video 1</h3>
+                        <p>Descripción breve del contenido del video.</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-image">
+                        <iframe width="100%" height="215" src="https://www.youtube.com/watch?v=c07ObHWAtCU&ab_channel=Yetwater" 
+                        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-info">
+                        <h3>Título del Video 2</h3>
+                        <p>Descripción breve del contenido del video.</p>
+                    </div>
+                </div>
+
+        <!-- Puedes seguir duplicando este bloque para más videos -->
+        
+            </div>
+        </section>
+
+
     </main>
 
     <!-- Scripts -->

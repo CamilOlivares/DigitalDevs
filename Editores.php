@@ -39,17 +39,17 @@
 <!-- Grid de 4 Secciones -->
 <div class="content-block grid-4">
   <div class="center-left-content">
-    <img src="../assets/images/dev1.png" alt="Imagen 1">
+    <img src="../assets/images/editor1.jpg"" alt="Imagen 1">
     <p><a href="https://www.canva.com/" target="_blank">Canva/</a></p>
   </div>
 
   <div class="center-left-content">
-    <img src="../assets/images/dev1.png" alt="Imagen 1">
+    <img src="../assets/images/editor1.jpg"" alt="Imagen 1">
     <p><a href="https://www.freepik.es/" target="_blank">Freepik</a></p>
   </div>
 
   <div class="center-right-content">
-    <img src="../assets/images/AI1.png" alt="Imagen 2">
+    <img src="../assets/images/editor1.jpg"" alt="Imagen 2">
     <p><a href="https://lordicon.com/" target="_blank">Lordicon</a></p>
   </div>
 
