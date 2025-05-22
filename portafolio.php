@@ -160,7 +160,7 @@
 
                 <div class="project">
                     <div class="project-image">
-                        <iframe width="100%" height="215" src="https://www.youtube.com/watch?v=xsAKaGsIKK8&ab_channel=Yetwater" 
+                        <iframe width="100%" height="215" src="https://www.youtube.com/embed/v=xsAKaGsIKK8&ab" 
                                 title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="project-info">
@@ -171,7 +171,7 @@
 
                 <div class="project">
                     <div class="project-image">
-                        <iframe width="100%" height="215" src="https://www.youtube.com/watch?v=c07ObHWAtCU&ab_channel=Yetwater" 
+                        <iframe width="100%" height="215" src="https://www.youtube.com/embed/v=c07ObHWAtCU&ab" 
                         title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="project-info">
