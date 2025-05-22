@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/css/robot.css"> <!-- Hoja de estilo para robot -->
     <link rel="stylesheet" href="assets/css/cursor.css"> <!-- Estilos personalizados para el cursor -->
     <link rel="stylesheet" href="assets/css/footer.css"> <!-- Estilos para el pie de página -->
+    <link rel="stylesheet" href="assets/css/glitchtext.css"> <!-- Estilos para el pie de página -->
+
    
 </head>
 <body>
@@ -29,8 +31,9 @@
 
 <main>
     <?php include("views/about.php"); ?>
+    <?php include("views/glitchtext.php"); ?>
 
-    <h2 class="grid-title">Explora el Futuro en Cuatro Pasos</h2>
+
 <!-- Grid de 4 Secciones -->
 <div class="content-block grid-4">
   <div class="left-content">
@@ -54,46 +57,6 @@
 </div>
 
 
-
-<!-- Grid de 3 Secciones -->
-<div class="content-block grid-3">
-  <div class="left-content">
-    <?php include("partials/robot.php"); ?>
-    <p>Este es el contenido de la izquierda</p>
-  </div>
-
-  <div class="center-content">
-    <?php include("partials/robot.php"); ?>
-    <p>Este es el contenido del centro</p>
-  </div>
-
-  <div class="right-content">
-    <?php include("partials/robot.php"); ?>
-    <p>Este es el contenido de la derecha</p>
-  </div>
-</div>
-
-<!-- Grid de 2 Secciones -->
-<div class="content-block grid-2">
-  <div class="left-content">
-    <?php include("partials/robot.php"); ?>
-    <p>Este es el contenido de la izquierda</p>
-  </div>
-
-  <div class="right-content">
-    <?php include("partials/robot.php"); ?>
-    <p>Este es el contenido de la derecha</p>
-  </div>
-</div>
-
-<!-- Grid de 1 Sección -->
-<div class="content-block grid-1">
-  <div class="single-content">
-    <?php include("partials/robot.php"); ?>
-    <p>Este es el contenido único a lo ancho</p>
-  </div>
-</div>
-
       <?php include("views/footer.php"); ?>
 </main>
 
@@ -105,6 +68,7 @@
     <script src="js/neuro.js"></script>
     <!-- Scripts para el efecto "Navbar" en el encabezado -->
     <script src="js/navbar.js"></script>
+    <script src="js/glitchtext.js" defer></script>
     
 
 </body>

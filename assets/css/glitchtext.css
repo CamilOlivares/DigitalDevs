@@ -1,0 +1,108 @@
+/* ==================== */
+/* CONTENEDOR PRINCIPAL */
+/* ==================== */
+.glitch-container {
+  /* Establece el contenedor como flexbox para facilitar el centrado */
+  display: flex;
+  /* Centra horizontalmente los elementos hijos */
+  justify-content: center;
+  /* Centra verticalmente los elementos hijos */
+  align-items: center;
+  /* Establece una altura mínima del 100% del viewport (altura visible) */
+  min-height: 100vh;
+  /* Ocupa el 100% del ancho disponible */
+  width: 100%;
+  /* Añade un relleno interno de 20px en todos los lados */
+  padding: 20px;
+  /* Color de fondo oscuro para mejor contraste */
+  background: #060606;
+  /* Alineación de texto centrada (como respaldo) */
+  text-align: center;
+}
+
+/* ============== */
+/* EFECTO GLITCH */
+/* ============== */
+.glitch-text {
+  /* Color del texto principal */
+  color: white;
+  /* Tamaño de fuente responsivo: mínimo 3rem, preferido 8vw, máximo 6rem */
+  font-size: clamp(3rem, 8vw, 4rem);
+  /* Grosor de la fuente (negrita) */
+  font-weight: 900;
+  /* Establece posición relativa para los elementos absolutos hijos */
+  position: relative;
+  /* Muestra como elemento en línea pero con propiedades de bloque */
+  display: inline-block;
+  /* Transforma el texto a mayúsculas */
+  text-transform: uppercase;
+}
+
+/* Pseudoelementos que crean el efecto glitch */
+.glitch-text::before,
+.glitch-text::after {
+  /* Usa el contenido del atributo data-text */
+  content: attr(data-text);
+  /* Posicionamiento absoluto respecto al elemento .glitch-text */
+  position: absolute;
+  /* Alinea en la parte superior */
+  top: 0;
+  /* Alinea en la parte izquierda */
+  left: 0;
+  /* Ocupa el 100% del ancho del padre */
+  width: 100%;
+  /* Ocupa el 100% de la altura del padre */
+  height: 100%;
+  /* Fondo igual al contenedor para efecto de superposición */
+  background: #060606;
+}
+
+/* Capa de glitch (cyan) */
+.glitch-text::before {
+  /* Desplazamiento horizontal de 4px a la derecha */
+  left: 4px;
+  /* Sombra de texto cyan hacia la izquierda */
+  text-shadow: -3px 0 cyan;
+  /* Animación de 2 segundos en bucle alternado */
+  animation: glitch-anim-before 2s infinite linear alternate-reverse;
+  /* Recorte poligonal inicial para la animación */
+  clip-path: polygon(0 20%, 100% 20%, 100% 25%, 0 25%);
+}
+
+/* Capa de glitch (red) */
+.glitch-text::after {
+  /* Desplazamiento horizontal de 4px a la izquierda */
+  left: -4px;
+  /* Sombra de texto roja hacia la derecha */
+  text-shadow: 3px 0 red;
+  /* Animación de 1.5 segundos en bucle alternado */
+  animation: glitch-anim-after 1.5s infinite linear alternate-reverse;
+  /* Recorte poligonal inicial diferente para variedad */
+  clip-path: polygon(0 60%, 100% 60%, 100% 65%, 0 65%);
+}
+
+/* =================== */
+/* ANIMACIONES GLITCH */
+/* =================== */
+
+/* Animación para la capa before (cyan) */
+@keyframes glitch-anim-before {
+  /* Puntos clave de la animación usando clip-path */
+  0% { clip-path: polygon(0 20%, 100% 20%, 100% 25%, 0 25%); }
+  20% { clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%); }
+  40% { clip-path: polygon(0 70%, 100% 70%, 100% 75%, 0 75%); }
+  60% { clip-path: polygon(0 30%, 100% 30%, 100% 35%, 0 35%); }
+  80% { clip-path: polygon(0 80%, 100% 80%, 100% 85%, 0 85%); }
+  100% { clip-path: polygon(0 40%, 100% 40%, 100% 45%, 0 45%); }
+}
+
+/* Animación para la capa after (red) */
+@keyframes glitch-anim-after {
+  /* Puntos clave con patron diferente para efecto más orgánico */
+  0% { clip-path: polygon(0 60%, 100% 60%, 100% 65%, 0 65%); }
+  20% { clip-path: polygon(0 30%, 100% 30%, 100% 35%, 0 35%); }
+  40% { clip-path: polygon(0 45%, 100% 45%, 100% 50%, 0 50%); }
+  60% { clip-path: polygon(0 75%, 100% 75%, 100% 80%, 0 80%); }
+  80% { clip-path: polygon(0 65%, 100% 65%, 100% 70%, 0 70%); }
+  100% { clip-path: polygon(0 90%, 100% 90%, 100% 95%, 0 95%); }
+}

@@ -1,0 +1,50 @@
+/* Contenedor principal */
+.blur-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    padding: 20px;
+    background: #060606;
+    text-align: center;
+  }
+  
+  /* Texto con efecto blur */
+  .blur-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para las palabras animadas */
+  .blur-text span.word {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(20px);
+    animation: blur-text-animation 1.5s forwards;
+    margin-right: 0.25em;
+  }
+  
+  /* Animación clave */
+  @keyframes blur-text-animation {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+      transform: translateY(20px);
+    }
+    50% {
+      opacity: 0.5;
+      filter: blur(5px);
+      transform: translateY(5px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,1 @@
+<p class="blur-text-minimal" data-text="Isn't this so cool?!"></p>
