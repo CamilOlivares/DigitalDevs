@@ -261,7 +261,8 @@
 
             </div>
         </section>
-
+        
+      <?php include("views/footer.php"); ?>
     </main>
 
     <!-- Scripts -->

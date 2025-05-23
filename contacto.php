@@ -16,11 +16,12 @@
     <?php include('views/navbar.php'); ?>
     <?php include('views/logo.php'); ?>   
 
-
+<main>
 <!-- Incluye el contenido del formulairo de contacto -->
- <?php include("views/contact.php"); ?> 
+    <?php include("views/contact.php"); ?> 
 
 
+<main>
 <!-- Scripts para el cargador de la página -->
 <script src="js/recaptcha.js"></script>
 <!-- JavaScript de AOS para efectos de animación al hacer scroll -->
