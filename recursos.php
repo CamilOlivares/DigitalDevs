@@ -11,15 +11,15 @@
       <div class="grid cards-3">
         <article class="card">
           <h3>Devs</h3>
-          <p>Impulsar negocios con tecnología usable y de alto impacto.</p>
+          <p>Los Mejores Recursos para Desarrolladores (Próximamente)</p>
         </article>
         <article class="card">
           <h3>IA</h3>
-          <p>Ser tu partner digital para crecer de forma sostenida.</p>
+          <p>Los Mejores Recursos dee Intelgencia Artificia (Próximamente)</p>
         </article>
         <article class="card">
           <h3>Editores</h3>
-          <p>Calidad, simpleza, transparencia y soporte real.</p>
+          <p>Los Mejores Recursos para Editores (Próximamente)</p>
         </article>
 
         </article>

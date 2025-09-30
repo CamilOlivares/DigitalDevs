@@ -10,9 +10,9 @@
           <a href="/portafolio.php" class="btn btn-ghost">Ver trabajos</a>
         </div>
         <ul class="hero-bullets">
-          <li>HTML + CSS + JS/jQuery</li>
-          <li>PHP para formularios</li>
-          <li>SEO y performance</li>
+          <li>Desarrollo Web</li>
+          <li>Soluciones IA</li>
+          <li>Cyberseguridad</li>
         </ul>
       </div>
       <div class="hero-art">
@@ -32,13 +32,13 @@
   <section class="section">
     <div class="container">
       <header class="section-head">
-        <h2>Nuestros <span class="grad">Servicios</span></h2>
-        <p>Paquetes modulares y reutilizables para crecer sin dolores.</p>
+        <h2>Servicios <span class="grad">Destacados</span></h2>
+        <p>Soluciones par tu Empresa o Proyecto</p>
       </header>
       <div class="grid cards-3">
-        <article class="card"><div class="icon">⚙️</div><h3>Desarrollo Web</h3><p>Sitios a medida, rápidos y mantenibles.</p></article>
-        <article class="card"><div class="icon">🛒</div><h3>E-commerce</h3><p>Checkout optimizado y catálogos escalables.</p></article>
-        <article class="card"><div class="icon">🤖</div><h3>Automatización</h3><p>Integraciones y flujos que ahorran tiempo.</p></article>
+        <article class="card"><div class="icon">⚙️Desarrollo Web</div><h3>(Próximamente).</p></article>
+        <article class="card"><div class="icon">🛒E-Commerce</div><h3>(Próximamente)</p></article>
+        <article class="card"><div class="icon">🤖Soluciones IA</div><h3>(Próximamente)</p></article>
       </div>
     </div>
   </section>
