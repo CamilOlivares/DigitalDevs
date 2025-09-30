@@ -15,7 +15,7 @@
         </article>
         <article class="card">
           <h3>IA</h3>
-          <p>Los Mejores Recursos dee Intelgencia Artificia (Próximamente)</p>
+          <p>Los Mejores Recursos dee Inteligencia Artificia (Próximamente)</p>
         </article>
         <article class="card">
           <h3>Editores</h3>

@@ -26,7 +26,7 @@ if (!isset($active)) { $active = ""; }
       <nav class="nav" id="mainNav" aria-label="Navegación principal">
         <a href="/index.php" class="<?= $active==='servicios'?'is-active':'' ?>">Inicio</a>
         <a href="/servicios.php" class="<?= $active==='servicios'?'is-active':'' ?>">Servicios</a>
-        <a href="/Recursos.php" class="<?= $active==='Recursos'?'is-active':'' ?>">Recursos</a>
+        <a href="/recursos.php" class="<?= $active==='recursos'?'is-active':'' ?>">Recursos</a>
         <a href="/portafolio.php" class="<?= $active==='portafolio'?'is-active':'' ?>">Portafolio</a>
         <a href="/contacto.php" class="btn btn-sm <?= $active==='contacto'?'is-active':'' ?>">Contacto</a>
       </nav>

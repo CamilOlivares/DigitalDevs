@@ -11,7 +11,7 @@
         </div>
         <ul class="hero-bullets">
           <li>Desarrollo Web</li>
-          <li>Soluciones IA</li>
+          <li>Soluciones ai</li>
           <li>Cyberseguridad</li>
         </ul>
       </div>
