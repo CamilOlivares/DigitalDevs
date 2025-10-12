@@ -1,4 +1,8 @@
-<?php $title="Inicio — DigitalDevs"; $active="inicio"; include __DIR__."/includes/head.php"; ?>
+<?php 
+  $title = "Inicio — DigitalDevs"; 
+  $active = "inicio"; 
+  include __DIR__ . "/includes/head.php"; 
+?>
 <main>
   <section class="hero">
     <div class="container hero-grid">
@@ -11,7 +15,7 @@
         </div>
         <ul class="hero-bullets">
           <li>Desarrollo Web</li>
-          <li>Soluciones ai</li>
+          <li>Soluciones IA</li>
           <li>Cyberseguridad</li>
         </ul>
       </div>
@@ -25,22 +29,43 @@
             <div><strong>24/7</strong><span>Monitoreo</span></div>
           </div>
         </div>
-        <div class="blob"></div><div class="blob blob-2"></div>
+        <div class="blob"></div>
+        <div class="blob blob-2"></div>
       </div>
     </div>
   </section>
+
   <section class="section">
     <div class="container">
       <header class="section-head">
         <h2>Servicios <span class="grad">Destacados</span></h2>
-        <p>Soluciones par tu Empresa o Proyecto</p>
+        <p>Soluciones para tu Empresa o Proyecto</p>
       </header>
+
       <div class="grid cards-3">
-        <article class="card"><div class="icon">⚙️Desarrollo Web</div><h3>(Próximamente).</p></article>
-        <article class="card"><div class="icon">🛒E-Commerce</div><h3>(Próximamente)</p></article>
-        <article class="card"><div class="icon">🤖Soluciones IA</div><h3>(Próximamente)</p></article>
+        <!-- Card 1 -->
+        <a href="#" target="_blank" rel="noopener" class="card">
+          <div class="icon">⚙️</div>
+          <h3>Desarrollo Web</h3>
+          <p>(Próximamente)</p>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="#" target="_blank" rel="noopener" class="card">
+          <div class="icon">🛒</div>
+          <h3>E-Commerce</h3>
+          <p>(Próximamente)</p>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="#" target="_blank" rel="noopener" class="card">
+          <div class="icon">🤖</div>
+          <h3>Soluciones IA</h3>
+          <p>(Próximamente)</p>
+        </a>
       </div>
     </div>
   </section>
 </main>
-<?php include __DIR__."/includes/footer.php"; ?>
+
+<?php include __DIR__ . "/includes/footer.php"; ?>
