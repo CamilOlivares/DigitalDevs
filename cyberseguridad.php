@@ -14,24 +14,15 @@ include __DIR__ . "/includes/head.php";
 
       <!-- Un solo grid: 3 columnas x 2 filas -->
       <div class="grid cards-3">
-        <article class="card">
+        <a href="#" class="card" style="text-decoration: none; color: inherit;">
+          <div class="icon">🛡️</div>
           <h3>Tienda</h3>
           <p>Revisa los Productos de Seguridad que tenemos para ti (Próximamente)</p>
-        </article>
-
-
+        </a>
       </div>
 
       <!-- Mapa de ataques cibernéticos -->
-      <div class="cybermap-container" style="text-align:center; margin-top: 40px;">
-        <iframe
-          src="https://cybermap.kaspersky.com/widget"
-          width="100%"
-          height="600"
-          style="border: none; border-radius: 10px;"
-          allowfullscreen>
-        </iframe>
-      </div>
+      <iframe width="1200" height="750" src="https://cybermap.kaspersky.com/es/widget/dynamic/dark" frameborder="0"></iframe>
 
     </div>
   </section>

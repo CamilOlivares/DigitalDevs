@@ -11,41 +11,47 @@ include __DIR__ . "/includes/head.php";
         <p>Los Mejores Recursos en Inteligencia Artificial</p>
       </header>
 
-      <!-- Un solo grid: 3 columnas x 2 filas -->
       <div class="grid cards-3">
         <a href="https://chatgpt.com/" class="card" style="text-decoration: none; color: inherit;">
+          <div class="icon">🤖</div>
           <h3>Chat GPT</h3>
-          <p>Hermoso Componentes CSS de Tailwind</p>
+          <p>Chatbot avanzado para generar texto y responder preguntas.</p>
         </a>
 
         <a href="https://gemini.google.com/app" class="card" style="text-decoration: none; color: inherit;">
-          <h3>CodePen</h3>
-          <p>CodePen para crear, probar y descubrir código front-end</p>
+          <div class="icon">🌟</div>
+          <h3>Gemini</h3>
+          <p>Asistente de IA de Google para tareas y consultas inteligentes.</p>
         </a>
 
         <a href="https://www.deepseek.com/" target="_blank" rel="noopener" class="card" style="text-decoration: none; color: inherit;">
-          <h3>UIverse</h3>
-          <p>Biblioteca de componentes animados para interfaces modernas.</p>
+          <div class="icon">🔎</div>
+          <h3>DeepSeek</h3>
+          <p>Buscador potenciado por IA.</p>
         </a>
 
         <a href="https://www.meta.ai/" class="card" style="text-decoration: none; color: inherit;">
-          <h3>UI Aceternity</h3>
-          <p>Componentes para Interfaces</p>
+          <div class="icon">🧠</div>
+          <h3>Meta AI</h3>
+          <p>Herramientas y modelos de inteligencia artificial de Meta.</p>
         </a>
 
         <a href="https://labs.google/fx/es/tools/flow" class="card" style="text-decoration: none; color: inherit;">
+          <div class="icon">🎬</div>
           <h3>Flow</h3>
           <p>Herramienta de VEO3 de Gemini para Creación de Videos con Sonido y Voz</p>
         </a>
 
         <a href="https://www.canva.com/" class="card" style="text-decoration: none; color: inherit;">
-          <h3>HTMLRev</h3>
-          <p>Plantillas HTML y CSS gratuitas</p>
+          <div class="icon">🎨</div>
+          <h3>Canva</h3>
+          <p>Diseño gráfico asistido por IA.</p>
         </a>
 
         <a href="https://www.freepik.es/" class="card" style="text-decoration: none; color: inherit;">
-          <h3>HTML5 UP</h3>
-          <p>Plantillas HTML y CSS gratuitas</p>
+          <div class="icon">🖼️</div>
+          <h3>FreePik</h3>
+          <p>Generador de imágenes con IA.</p>
         </a>
       </div>
     </div>
