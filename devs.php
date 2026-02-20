@@ -53,6 +53,13 @@ include __DIR__ . "/includes/head.php";
           <h3>Iconos</h3>
           <p>Todos los iconos que tu proyecto necesita.</p>
         </a>
+
+        <a href="https://panel.hosting.cl/aff.php?aff=225" class="card" style="text-decoration: none; color: inherit;">
+          <div class="icon">🔣</div>
+          <h3>Hosting</h3>
+          <p>Uno de los mejores Hosting de Chile</p>
+        </a>
+
       </div>
     </div>
   </section>

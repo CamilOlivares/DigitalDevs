@@ -11,7 +11,7 @@
         <p>Webs rápidas, seguras y listas para convertir. Componentes reutilizables, escalables y fáciles de editar.</p>
         <div class="hero-cta">
           <a href="/contacto.php" class="btn btn-lg">Comenzar ahora</a>
-          <a href="/portafolio.php" class="btn btn-ghost">Ver trabajos</a>
+          <a href="https://store.digitaldevs.cl/" class="btn btn-ghost">Ver Tienda</a>
         </div>
         <ul class="hero-bullets">
           <li>Desarrollo Web</li>
@@ -24,8 +24,8 @@
           <h3>Panel en tiempo real</h3>
           <p>Estadísticas, interacción y reportes claros.</p>
           <div class="stats">
-            <div><strong>+178%</strong><span>Tráfico</span></div>
-            <div><strong>98</strong><span>PageSpeed</span></div>
+            <div><strong>99,982%</strong><span>UPTIME</span></div>
+            <div><strong>98%</strong><span>PageSpeed</span></div>
             <div><strong>24/7</strong><span>Monitoreo</span></div>
           </div>
         </div>
@@ -44,24 +44,24 @@
 
       <div class="grid cards-3">
         <!-- Card 1 -->
-        <a href="#" target="_blank" rel="noopener" class="card">
+        <a href="https://store.digitaldevs.cl/categoria-producto/sitios-web/" target="_blank" rel="noopener" class="card">
           <div class="icon">⚙️</div>
           <h3>Desarrollo Web</h3>
-          <p>(Próximamente)</p>
+          <p>Creación de Sitios Web modernos y Funcionales</p>
         </a>
 
         <!-- Card 2 -->
-        <a href="#" target="_blank" rel="noopener" class="card">
+        <a href="https://store.digitaldevs.cl/categoria-producto/e-commerce/" target="_blank" rel="noopener" class="card">
           <div class="icon">🛒</div>
           <h3>E-Commerce</h3>
-          <p>(Próximamente)</p>
+          <p>Vende Mientras Duermes</p>
         </a>
 
         <!-- Card 3 -->
-        <a href="#" target="_blank" rel="noopener" class="card">
-          <div class="icon">🤖</div>
-          <h3>Soluciones IA</h3>
-          <p>(Próximamente)</p>
+        <a href="https://store.digitaldevs.cl/categoria-producto/cyberseguridad/" target="_blank" rel="noopener" class="card">
+          <div class="icon">🛡️</div>
+          <h3>Cyberseguridad</h3>
+          <p>Protege tu Negocio</p>
         </a>
       </div>
     </div>
