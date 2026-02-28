@@ -21,7 +21,7 @@
       </div>
       <div class="hero-art">
         <div class="glass-card">
-          <h3>Panel en tiempo real</h3>
+          <h3>Monitoreamos 24/7</h3>
           <p>Estadísticas, interacción y reportes claros.</p>
           <div class="stats">
             <div><strong>99,982%</strong><span>UPTIME</span></div>
