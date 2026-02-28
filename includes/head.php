@@ -15,7 +15,7 @@ if (!isset($extra_head)) { $extra_head = ""; }
   <link rel="icon" type="image/png" sizes="32x32"   href="assets/img/brand/icon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/img/brand/icon-192.png">
   <link rel="apple-touch-icon" sizes="180x180"      href="assets/img/brand/icon-180.png">
-  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/css/style.css?v=<?= filemtime(__DIR__ . '/../assets/css/style.css') ?>"/>
   <?= $extra_head ?>
 </head>
 <body>
