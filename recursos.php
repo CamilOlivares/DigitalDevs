@@ -12,25 +12,25 @@ include __DIR__ . "/includes/head.php";
       </header>
 
       <div class="grid cards-3">
-        <a href="/devs.php" class="card">
+        <a href="devs.php" class="card">
           <div class="icon">💻</div>
           <h3>Devs</h3>
           <p>Los Mejores Recursos para Desarrolladores</p>
         </a>
 
-        <a href="/ia.php" class="card">
+        <a href="ia.php" class="card">
           <div class="icon">🤖</div>
           <h3>IA</h3>
           <p>Los Mejores Recursos de Inteligencia Artificial</p>
         </a>
 
-        <a href="/editores.php" class="card">
+        <a href="editores.php" class="card">
           <div class="icon">🎥</div>
           <h3>Editores</h3>
           <p>Los Mejores Recursos para Editores</p>
         </a>
 
-        <a href="/cyberseguridad.php" class="card">
+        <a href="cyberseguridad.php" class="card">
           <div class="icon">🛡️</div>
           <h3>CyberSeguridad</h3>
           <p>Los Mejores Recursos en Cyberseguridad</p>

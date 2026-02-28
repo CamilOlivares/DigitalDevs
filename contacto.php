@@ -55,7 +55,7 @@ include __DIR__ . "/includes/head.php";
         <div class="contact-glass">
           <div class="cg-shimmer" aria-hidden="true"></div>
 
-          <form id="contact-form" action="/back/envio_formulario.php" method="post" novalidate>
+          <form id="contact-form" action="back/envio_formulario.php" method="post" novalidate>
             <div class="form-grid-2">
               <div class="field">
                 <label for="name">
@@ -158,5 +158,5 @@ include __DIR__ . "/includes/head.php";
   </section>
 </main>
 
-<script src="/assets/js/recaptcha.js"></script>
+<script src="assets/js/recaptcha.js"></script>
 <?php include __DIR__ . "/includes/footer.php"; ?>

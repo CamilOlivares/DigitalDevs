@@ -12,24 +12,24 @@ if (!isset($extra_head)) { $extra_head = ""; }
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32"   href="/assets/img/brand/icon-32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/brand/icon-192.png">
-  <link rel="apple-touch-icon" sizes="180x180"      href="/assets/img/brand/icon-180.png">
-  <link rel="stylesheet" href="/assets/css/style.css"/>
+  <link rel="icon" type="image/png" sizes="32x32"   href="assets/img/brand/icon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/brand/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180"      href="assets/img/brand/icon-180.png">
+  <link rel="stylesheet" href="assets/css/style.css"/>
   <?= $extra_head ?>
 </head>
 <body>
   <header class="site-header" id="top">
     <div class="container nav-container">
-      <a href="/index.php" class="brand" aria-label="DigitalDevs — Inicio">
-        <img src="/assets/img/brand/logo-mark.png" alt="DigitalDevs" width="40" height="40" class="brand-mark"/>
+      <a href="index.php" class="brand" aria-label="DigitalDevs — Inicio">
+        <img src="assets/img/brand/logo-mark.png" alt="DigitalDevs" width="40" height="40" class="brand-mark"/>
         <span class="brand-text">DigitalDevs</span>
       </a>
 
       <nav class="nav" id="mainNav" aria-label="Navegación principal">
-        <a href="/index.php"   class="<?= $active === 'inicio'   ? 'is-active' : '' ?>">Inicio</a>
-        <a href="/recursos.php" class="<?= $active === 'recursos' ? 'is-active' : '' ?>">Recursos</a>
-        <a href="/contacto.php" class="btn btn-sm <?= $active === 'contacto' ? 'is-active' : '' ?>">Contacto</a>
+        <a href="index.php"   class="<?= $active === 'inicio'   ? 'is-active' : '' ?>">Inicio</a>
+        <a href="recursos.php" class="<?= $active === 'recursos' ? 'is-active' : '' ?>">Recursos</a>
+        <a href="contacto.php" class="btn btn-sm <?= $active === 'contacto' ? 'is-active' : '' ?>">Contacto</a>
       </nav>
 
       <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">

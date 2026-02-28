@@ -10,7 +10,7 @@
         <h1>Impulsa tu negocio con <span class="grad">Tecnología y Diseño</span></h1>
         <p>Webs rápidas, seguras y listas para convertir. Componentes reutilizables, escalables y fáciles de editar.</p>
         <div class="hero-cta">
-          <a href="/contacto.php" class="btn btn-lg">Comenzar ahora</a>
+          <a href="contacto.php" class="btn btn-lg">Comenzar ahora</a>
           <a href="https://store.digitaldevs.cl/" class="btn btn-ghost">Ver Tienda</a>
         </div>
         <ul class="hero-bullets">

@@ -11,8 +11,8 @@
 
         <!-- Marca + tagline -->
         <div class="footer-brand">
-          <a href="/index.php" class="brand" aria-label="DigitalDevs — Inicio">
-            <img src="/assets/img/brand/logo-mark.png" alt="DigitalDevs" width="32" height="32" class="brand-mark"/>
+          <a href="index.php" class="brand" aria-label="DigitalDevs — Inicio">
+            <img src="assets/img/brand/logo-mark.png" alt="DigitalDevs" width="32" height="32" class="brand-mark"/>
             <span class="brand-text">DigitalDevs</span>
           </a>
           <p class="footer-tagline">Webs rápidas, seguras y listas<br>para convertir.</p>
@@ -21,11 +21,11 @@
         <!-- Navegación columna -->
         <nav class="footer-links" aria-label="Atajos del sitio">
           <span class="footer-col-title">Sitio</span>
-          <a href="/index.php">Inicio</a>
-          <a href="/servicios.php">Servicios</a>
-          <a href="/portafolio.php">Portafolio</a>
-          <a href="/recursos.php">Recursos</a>
-          <a href="/contacto.php">Contacto</a>
+          <a href="index.php">Inicio</a>
+          <a href="servicios.php">Servicios</a>
+          <a href="portafolio.php">Portafolio</a>
+          <a href="recursos.php">Recursos</a>
+          <a href="contacto.php">Contacto</a>
         </nav>
 
         <!-- Columna de contacto rápido -->
@@ -60,6 +60,6 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
