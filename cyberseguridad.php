@@ -14,10 +14,10 @@ include __DIR__ . "/includes/head.php";
 
       <!-- Un solo grid: 3 columnas x 2 filas -->
       <div class="grid cards-3">
-        <a href="#" class="card" style="text-decoration: none; color: inherit;">
+        <a href="https://store.digitaldevs.cl/categoria-producto/cyberseguridad/" class="card" style="text-decoration: none; color: inherit;">
           <div class="icon">🛡️</div>
           <h3>Tienda</h3>
-          <p>Revisa los Productos de Seguridad que tenemos para ti (Próximamente)</p>
+          <p>Revisa los Productos de Seguridad que tenemos para ti</p>
         </a>
       </div>
 

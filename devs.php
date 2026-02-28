@@ -1,6 +1,6 @@
 <?php
-$title = "Recursos Devs — DigitalDevs";
-$active = "Recursos Devs";
+$title  = "Recursos Devs — DigitalDevs";
+$active = "recursos";
 include __DIR__ . "/includes/head.php";
 ?>
 <main>
@@ -12,54 +12,53 @@ include __DIR__ . "/includes/head.php";
       </header>
 
       <div class="grid cards-3">
-        <a href="https://merakiui.com/" class="card" style="text-decoration: none; color: inherit;">
+        <a href="https://merakiui.com/" target="_blank" rel="noopener" class="card">
           <div class="icon">🎨</div>
           <h3>MerakiUI</h3>
           <p>Hermosos componentes CSS de Tailwind.</p>
         </a>
 
-        <a href="https://codepen.io/trending" class="card" style="text-decoration: none; color: inherit;">
+        <a href="https://codepen.io/trending" target="_blank" rel="noopener" class="card">
           <div class="icon">💻</div>
           <h3>CodePen</h3>
           <p>Crear, probar y descubrir código front-end.</p>
         </a>
 
-        <a href="https://uiverse.io" target="_blank" rel="noopener" class="card" style="text-decoration: none; color: inherit;">
+        <a href="https://uiverse.io" target="_blank" rel="noopener" class="card">
           <div class="icon">✨</div>
           <h3>UIverse</h3>
           <p>Componentes animados para interfaces modernas.</p>
         </a>
 
-        <a href="https://ui.aceternity.com/" class="card" style="text-decoration: none; color: inherit;">
+        <a href="https://ui.aceternity.com/" target="_blank" rel="noopener" class="card">
           <div class="icon">🧩</div>
           <h3>UI Aceternity</h3>
           <p>Componentes para interfaces.</p>
         </a>
 
-        <a href="https://htmlrev.com/" class="card" style="text-decoration: none; color: inherit;">
+        <a href="https://htmlrev.com/" target="_blank" rel="noopener" class="card">
           <div class="icon">📄</div>
           <h3>HTMLRev</h3>
           <p>Plantillas HTML y CSS gratuitas.</p>
         </a>
 
-        <a href="https://html5up.net/" class="card" style="text-decoration: none; color: inherit;">
+        <a href="https://html5up.net/" target="_blank" rel="noopener" class="card">
           <div class="icon">📝</div>
           <h3>HTML5 UP</h3>
           <p>Plantillas HTML y CSS gratuitas.</p>
         </a>
 
-        <a href="https://emojipedia.org/" class="card" style="text-decoration: none; color: inherit;">
+        <a href="https://emojipedia.org/" target="_blank" rel="noopener" class="card">
           <div class="icon">🔣</div>
-          <h3>Iconos</h3>
+          <h3>Emojipedia</h3>
           <p>Todos los iconos que tu proyecto necesita.</p>
         </a>
 
-        <a href="https://panel.hosting.cl/aff.php?aff=225" class="card" style="text-decoration: none; color: inherit;">
-          <div class="icon">🔣</div>
-          <h3>Hosting</h3>
-          <p>Uno de los mejores Hosting de Chile</p>
+        <a href="https://panel.hosting.cl/aff.php?aff=225" target="_blank" rel="noopener" class="card">
+          <div class="icon">🖥️</div>
+          <h3>Hosting CL</h3>
+          <p>Uno de los mejores Hosting de Chile.</p>
         </a>
-
       </div>
     </div>
   </section>

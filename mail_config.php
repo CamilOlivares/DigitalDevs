@@ -1,15 +1,20 @@
 <?php
 /**
  * mail_config.php
- * Configuración global de correo para DigitalDevs
+ * Configuración global de correo y servicios externos para DigitalDevs.
+ * Centraliza todas las credenciales en un único lugar.
  */
 
-// Nombre de tu sitio o empresa (aparece en el "From")
+// Nombre del sitio (aparece en el campo "From" de los correos)
 $SITE_NAME = "DigitalDevs";
 
-// Dirección de destino (aquí llegarán los formularios de contacto)
-$TO_EMAIL  = "contacto@digitaldevs.cl";
+// Dirección de destino: aquí llegarán los mensajes del formulario de contacto
+$TO_EMAIL = "contacto@digitaldevs.cl";
 
-// Dirección de remitente (IMPORTANTE: debe ser del mismo dominio que tu hosting
-// para que no lo bloquee como spam; por ejemplo: no-reply@digitaldevs.cl)
+// Dirección de remitente (debe pertenecer al mismo dominio del hosting
+// para evitar que los correos sean marcados como spam)
 $FROM_EMAIL = "no-reply@digitaldevs.cl";
+
+// Clave secreta de Google reCAPTCHA v3
+// Obtén la tuya en: https://www.google.com/recaptcha/admin
+$RECAPTCHA_SECRET = "6LdJpvMqAAAAADNf-HAg8T9PHJJZKH5ni0lSQqK8";
