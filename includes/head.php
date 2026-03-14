@@ -30,6 +30,7 @@ if (!isset($extra_head)) { $extra_head = ""; }
         <a href="index.php"   class="<?= $active === 'inicio'   ? 'is-active' : '' ?>">Inicio</a>
         <a href="recursos.php" class="<?= $active === 'recursos' ? 'is-active' : '' ?>">Recursos</a>
         <a href="portafolio.php" class="<?= $active === 'portafolio' ? 'is-active' : '' ?>">Portafolio</a>
+        <a href="https://store.digitaldevs.cl/" class="<?= $active === 'tienda' ? 'is-active' : '' ?>">Tienda</a>
         <a href="contacto.php" class="btn btn-sm <?= $active === 'contacto' ? 'is-active' : '' ?>">Contacto</a>
       </nav>
 
