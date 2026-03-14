@@ -8,15 +8,14 @@ include __DIR__ . "/includes/head.php";
  * Cambia las URLs por las reales de cada proyecto.
  */
 $projects = [
-  [ "title" => "Fama Factory - Segidores RRSS",  "image" => "/assets/img/portfolio/Proyecto1.png",  "url" => "http://famafactory.cl/" ],
+ 
   [ "title" => "Yetwater - Agua Capturada del Aire",  "image" => "/assets/img/portfolio/Proyecto2.png",  "url" => "https://yetwater.cl/" ],
   [ "title" => "Rubico Spa - Logistica",  "image" => "/assets/img/portfolio/Proyecto3.png",  "url" => "https://rubicospa.cl/" ],
   [ "title" => "Protal Spa - Servicios Generales",  "image" => "/assets/img/portfolio/Proyecto5.png",  "url" => "https://protalspa.cl/" ],
-  [ "title" => "Prosecurity Chile Spa - Seguridad Privada",  "image" => "/assets/img/portfolio/Proyecto6.png",  "url" => "https://prosecuritychile.cl/" ],
   [ "title" => "Stoik Spa - Backoffice",  "image" => "/assets/img/portfolio/Proyecto7.png",  "url" => "https://stoikspa.cl/" ],
   [ "title" => "Minaer Spa - Seguridad Privada",  "image" => "/assets/img/portfolio/Proyecto8.png",  "url" => "https://minaer.cl/" ],
   [ "title" => "Formaplus - OTEC",  "image" => "/assets/img/portfolio/Proyecto9.png",  "url" => "https://formaplus.cl/" ],
-  [ "title" => "factory 13 - Producciones", "image" => "/assets/img/portfolio/Proyecto10.png", "url" => "https://factory13.cl/" ],
+  
 ];
 ?>
 
@@ -30,11 +29,19 @@ $projects = [
 
       <div class="grid gallery">
         <?php foreach ($projects as $p): ?>
-          <article class="shot">
+          <article class="glass-portfolio">
             <a href="<?= htmlspecialchars($p['url']) ?>" target="_blank" rel="noopener noreferrer" aria-label="<?= htmlspecialchars($p['title']) ?> — abrir sitio">
-              <img src="<?= htmlspecialchars($p['image']) ?>" alt="<?= htmlspecialchars($p['title']) ?>">
+              <div class="gp-glow"></div>
+              <div class="gp-image">
+                <img src="<?= htmlspecialchars($p['image']) ?>" alt="<?= htmlspecialchars($p['title']) ?>">
+                <div class="gp-overlay">
+                  <span class="gp-view-text">Ver Proyecto <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </div>
+              </div>
+              <div class="gp-content">
+                <h3><?= htmlspecialchars($p['title']) ?></h3>
+              </div>
             </a>
-            <span><?= htmlspecialchars($p['title']) ?></span>
           </article>
         <?php endforeach; ?>
       </div>

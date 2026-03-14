@@ -796,53 +796,170 @@ body.light-mode .card:hover {
 }
 
 /* ==========================================================================
-   Galería / Shots
+   Galería / Premium Glass Portfolio
    ========================================================================== */
-.shot {
+.glass-portfolio {
   position: relative;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  border-radius: 14px;
-  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: perspective(1000px) rotateX(0) rotateY(0);
 }
 
-.shot img {
-  transition: transform .5s var(--ease), filter .5s var(--ease);
+.glass-portfolio a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
 }
 
-.shot:hover img {
-  transform: scale(1.07);
-  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, .45)) brightness(1.05);
-}
-
-.shot span {
+/* Glow animado detrás de la tarjeta */
+.gp-glow {
   position: absolute;
-  left: 12px;
-  bottom: 10px;
-  background: rgba(0, 0, 0, .58);
-  backdrop-filter: blur(4px);
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: .85rem;
-  transition: background var(--dur) var(--ease), transform var(--dur) var(--ease);
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 50% 50%, rgba(156, 61, 255, 0.15), transparent 60%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+  z-index: 1;
 }
 
-.shot:hover span {
-  background: rgba(156, 61, 255, .75);
-  transform: translateY(-2px);
+.glass-portfolio:hover .gp-glow {
+  opacity: 1;
+  animation: rotateGlow 8s linear infinite;
 }
 
-/* Overlay de color al hover */
-.shot::after {
-  content: '';
+@keyframes rotateGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Contenedor de imagen premium */
+.gp-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 18px 18px 0 0;
+  z-index: 2;
+}
+
+.gp-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.7s ease;
+}
+
+.glass-portfolio:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.35),
+    0 0 40px rgba(156, 61, 255, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.glass-portfolio:hover .gp-image img {
+  transform: scale(1.08);
+  filter: brightness(1.1) contrast(1.05);
+}
+
+/* Overlay dark glass al hover */
+.gp-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 50%, rgba(156, 61, 255, .35));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2) 50%, transparent);
   opacity: 0;
-  transition: opacity .4s var(--ease);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  backdrop-filter: blur(0px);
 }
 
-.shot:hover::after {
+.glass-portfolio:hover .gp-overlay {
   opacity: 1;
+  backdrop-filter: blur(4px);
+}
+
+/* "Ver proyecto" badge moderno */
+.gp-view-text {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  backdrop-filter: blur(10px);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.gp-view-text svg {
+  transition: transform 0.3s ease;
+}
+
+.glass-portfolio:hover .gp-view-text {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.glass-portfolio:hover .gp-view-text:hover {
+  background: rgba(156, 61, 255, 0.8);
+  border-color: rgba(156, 61, 255, 1);
+}
+
+.glass-portfolio:hover .gp-view-text:hover svg {
+  transform: translateX(4px) translateY(-4px);
+}
+
+/* Contenido del título */
+.gp-content {
+  padding: 22px 20px;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+}
+
+.gp-content h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.glass-portfolio:hover .gp-content h3 {
+  color: transparent;
+  background: linear-gradient(90deg, #fff, var(--primary));
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /* ==========================================================================

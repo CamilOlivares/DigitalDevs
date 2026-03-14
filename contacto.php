@@ -138,10 +138,10 @@ include __DIR__ . "/includes/head.php";
           <p class="muted">Operamos de forma 100% remota a nivel mundial, pero nuestras raíces están aquí:</p>
           <ul class="contact-list muted">
             <li><strong>País:</strong> Chile 🇨🇱</li>
-            <li><strong>Región:</strong> Metropolitana</li>
             <li><strong>Email:</strong> contacto@digitaldevs.cl</li>
           </ul>
-        </div>
+        </div>            
+
 
         <!-- Tarjeta de Ayuda -->
         <div class="glass-card reveal">
