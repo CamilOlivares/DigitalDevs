@@ -27,12 +27,11 @@ $projects = [
     <div class="container">
       <header class="section-head">
         <h1>Casos & <span class="grad">Portafolios</span></h1>
-        <p>Proyectos reales.</p>
       </header>
 
       <?php foreach ($projects as $category => $cat_projects): ?>
         <div class="portfolio-category">
-          <h2 class="portfolio-category-title"><?= htmlspecialchars($category) ?></h2>
+          <h2 class="portfolio-category-title grad-reverse"><?= htmlspecialchars($category) ?></h2>
           <div class="grid gallery <?= count($cat_projects) === 1 ? 'is-single' : '' ?>">
             <?php foreach ($cat_projects as $p): ?>
               <article class="glass-portfolio">

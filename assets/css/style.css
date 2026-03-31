@@ -662,18 +662,25 @@ body.light-mode .btn-ghost:hover {
   animation: gradientShift 5s ease infinite;
 }
 
+.grad-reverse {
+  background: linear-gradient(270deg, var(--primary), var(--primary-2), var(--brand-blue));
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShiftReverse 5s ease infinite;
+}
+
 @keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+@keyframes gradientShiftReverse {
+  0% { background-position: 100% 50%; }
+  50% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 /* Grids */
