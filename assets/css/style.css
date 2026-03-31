@@ -72,8 +72,11 @@ body {
     radial-gradient(1200px 800px at 20% 100%, rgba(46, 107, 255, .10), transparent),
     var(--liquid-anim);
   background-size: 400% 400%, 400% 400%, 400% 400%;
+  background-attachment: fixed; /* Evita repintado del fondo al hacer scroll */
   animation: slide 22s ease infinite;
   line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
 }
 
 
@@ -979,15 +982,10 @@ body.light-mode .card:hover {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #fff;
   margin-bottom: 40px;
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-2));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--primary);
 }
