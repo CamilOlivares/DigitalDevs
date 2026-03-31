@@ -76,6 +76,7 @@ body {
   animation: slide 22s ease infinite;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
+  backface-visibility: hidden; /* Estabilización adicional para scroll */
   position: relative;
 }
 
@@ -658,7 +659,7 @@ body.light-mode .btn-ghost:hover {
 /* Texto con gradiente animado en hover */
 .grad {
   background: linear-gradient(90deg, var(--primary), var(--primary-2), var(--brand-blue));
-  background-size: 200% 100%;
+  background-size: 400% 100%; /* Aumentado para mayor dinamismo */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -667,7 +668,7 @@ body.light-mode .btn-ghost:hover {
 
 .grad-reverse {
   background: linear-gradient(270deg, var(--primary), var(--primary-2), var(--brand-blue));
-  background-size: 200% 100%;
+  background-size: 400% 100%; /* Aumentado para mayor dinamismo */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
