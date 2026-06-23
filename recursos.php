@@ -1,5 +1,5 @@
 <?php
-$title  = "Recursos — DigitalDevs";
+$title = "Recursos — DigitalDevs";
 $active = "recursos";
 include __DIR__ . "/includes/head.php";
 ?>
@@ -16,12 +16,6 @@ include __DIR__ . "/includes/head.php";
           <div class="icon">💻</div>
           <h3>Devs</h3>
           <p>Los Mejores Recursos para Desarrolladores</p>
-        </a>
-
-        <a href="ia.php" class="card">
-          <div class="icon">🤖</div>
-          <h3>IA</h3>
-          <p>Los Mejores Recursos de Inteligencia Artificial</p>
         </a>
 
         <a href="editores.php" class="card">
